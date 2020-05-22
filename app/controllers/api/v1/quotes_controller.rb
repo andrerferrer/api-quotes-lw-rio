@@ -1,5 +1,5 @@
 class Api::V1::QuotesController < Api::V1::BaseController
-  before_action :set_person, only: %i[ show, all ]
+  before_action :set_person, only: %i[ show all ]
 
   def show
     @quote = @person.quotes.order("RANDOM()").first
