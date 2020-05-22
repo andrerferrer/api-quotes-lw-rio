@@ -1,2 +1,2 @@
-json.person @person[:name]
+json.person @person[:name].capitalize
 json.extract! @quote, :content
