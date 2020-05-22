@@ -1,6 +1,15 @@
 class Api::V1::QuotesController < Api::V1::BaseController
+  before_action :set_person, only: %i[ show, all ]
+
   def show
-    @person = Person.find_by_name(params[:slug].downcase)
     @quote = @person.quotes.order("RANDOM()").first
+  end
+
+  def all; end
+
+  private
+
+  def set_person
+    @person = Person.find_by_name(params[:slug].downcase)
   end
 end
