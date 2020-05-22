@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+This is an api to retrieve quotes from the amazing people at Le Wagon Rio
+
+The rest of the CRUD is TBD
