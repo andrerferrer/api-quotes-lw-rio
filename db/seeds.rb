@@ -20,6 +20,7 @@ quotes = {
     'PUSH ON HEROKU',
     'DEMO AT 5',
     'BE ON TIME',
+    "You're all adults. I'm not here to tell you which book is sacred: Old testament or New testament. You'll find the truth in your hearts. Follow it.",
   ],
 
   marcel: [
