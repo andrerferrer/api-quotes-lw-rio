@@ -1,3 +1,31 @@
-<h1>Le Wagon Rio Quotes</h1>
-<p>Look for /api/v1/quotes/:person_name and have fun </p>
-<p>You can check for all of the person's quotes at: /api/v1/quotes/:person_name/all </p>
+<div class="container">
+
+  <h1>Le Wagon Rio Quotes</h1>
+  <p>Look for /api/v1/quotes/:person_name and have fun </p>
+  <p>You can check for all of the person's quotes at: /api/v1/quotes/:person_name/all </p>
+
+
+  <button>Click here to receive a MOMilene quote</button>
+  <p id="person"></p>
+  <p id="quote"></p>
+
+  <script>
+
+    const updateTheDOM = (data) => {
+      document.getElementById("person").innerText = data.person
+      document.getElementById("quote").innerText = data.content
+    }
+
+    const fetchApi = (event) => {
+      const url = "api/v1/quotes/milene"
+      fetch(url)
+        .then(res => res.json())
+        .then(updateTheDOM)    
+    }
+
+    const btn = document.querySelector("button")
+    btn.addEventListener('click', fetchApi)
+    
+  </script>
+
+</div>
