@@ -27,6 +27,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
 
   def render_error
     render json: { errors: @quote.errors.full_messages },
-      status: :unprocessable_entity
+    status: :unprocessable_entity
   end
 end
