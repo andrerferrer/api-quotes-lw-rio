@@ -7,9 +7,26 @@ class Api::V1::QuotesController < Api::V1::BaseController
 
   def all; end
 
+  def update
+    if @quote.update(quote_params)
+      render :show
+    else
+      render_error
+    end
+  end
+
   private
 
   def set_person
     @person = Person.find_by_name(params[:slug].downcase)
+  end
+
+  def quote_params
+    params.require(:quote).permit(:content)
+  end
+
+  def render_error
+    render json: { errors: @quote.errors.full_messages },
+      status: :unprocessable_entity
   end
 end
