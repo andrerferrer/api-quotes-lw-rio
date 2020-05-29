@@ -8,10 +8,8 @@ class Api::V1::QuotesController < Api::V1::BaseController
   def all; end
 
   def create
-    @quote = Quote.new(params[:quote])
-    @person = Person.find_or_create_by(params[:person])
-    @quote.person = @person
-    @quote.user = current_user
+    @quote = Quote.new(content: params[:quote])
+    @quote.person = Person.find_or_create_by(name: params[:person])
     if @quote.save
       render :show, status: :created
     else
