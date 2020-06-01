@@ -1,5 +1,5 @@
 class Api::V1::QuotesController < Api::V1::BaseController
-  before_action :set_person, only: %i[ show all ]
+  before_action :set_person, only: %i[ show all update ]
 
   def show
     @quote = @person.quotes.order("RANDOM()").first
@@ -8,6 +8,7 @@ class Api::V1::QuotesController < Api::V1::BaseController
   def all; end
 
   def update
+    @quote = @person.quotes.find(params[:id])
     if @quote.update(quote_params)
       render :show
     else
