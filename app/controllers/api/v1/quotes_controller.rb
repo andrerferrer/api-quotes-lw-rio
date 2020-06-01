@@ -5,12 +5,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
     @quote = @person.quotes.order("RANDOM()").first
   end
 
-  def create
-  	@quote = Quote.new( person: Person.first, content: "Testando")
-  	@quote.save
-  	render :show
-  end
-
   def all; end
 
   def create
