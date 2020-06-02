@@ -9,6 +9,7 @@ Rails.application.routes.draw do
           get :all, to: 'quotes#all'
         end
       end
+      resources :quotes, only: :update, param: :slug
     end
   end
 
