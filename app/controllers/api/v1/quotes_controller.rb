@@ -1,5 +1,5 @@
 class Api::V1::QuotesController < Api::V1::BaseController
-  before_action :set_person, only: %i[ show all update]
+  before_action :set_person, only: %i[ show all ]
 
   def show
     @quote = @person.quotes.order("RANDOM()").first
@@ -13,12 +13,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
 
   def all; end
 
-  def update
-    @quote = Quote.find(params[:id])
-    @quote.update(quote_params)
-    render :show
-  end
-
   private
 
   def quote_params
@@ -26,11 +20,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
   end
 
   def set_person
-    @person = Person.find_by_name(params[:slug])
+    @person = Person.find_by_name(params[:slug].downcase)
   end
-
-  def quote_params
-    params.require(:quote).permit(:content)
-  end
-
 end
