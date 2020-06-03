@@ -9,7 +9,7 @@ class Api::V1::QuotesController < Api::V1::BaseController
 
   def create
     @quote = Quote.new(content: params[:quote])
-    @quote.person = Person.find_or_create_by(name: params[:person])
+    @quote.person = Person.find_by(name: params[:person].downcase)
     if @quote.save
       render :show, status: :created
     else
