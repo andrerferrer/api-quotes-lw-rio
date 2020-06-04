@@ -7,6 +7,7 @@ class Api::V1::QuotesController < Api::V1::BaseController
 
   def all; end
 
+  # Add comment
   def update
     @quote = Quote.find(params[:id])
     if @quote.update(quote_params)
