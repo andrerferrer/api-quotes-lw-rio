@@ -5,9 +5,9 @@ class Api::V1::QuotesController < Api::V1::BaseController
     @quote = @person.quotes.order("RANDOM()").first
   end
 
+
   def all; end
 
-  # Add comment
   def update
     @quote = Quote.find(params[:id])
     if @quote.update(quote_params)
@@ -17,18 +17,19 @@ class Api::V1::QuotesController < Api::V1::BaseController
     end
   end
 
+  def create
+  	@quote = Quote.new( person: Person.first, content: "Testando")
+  	@quote.save
+  	render :show
+  end
+
   private
+
+  def quote_params
+  	params.require(:quote).permit(:person_id, :content)
+  end
 
   def set_person
     @person = Person.find_by_name(params[:slug].downcase)
-  end
-
-  def quote_params
-    params.require(:quote).permit(:content)
-  end
-
-  def render_error
-    render json: { errors: @quote.errors.full_messages },
-    status: :unprocessable_entity
   end
 end

@@ -4,13 +4,12 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      # Route to the show page that needs the person as a parameter
-      resources :quotes, only: [ :show ], param: :slug do
+      # route to the show and create page that need the person as a parameter
+      resources :quotes, only: [ :show, :create ], param: :slug do
         member do
           get :all, to: 'quotes#all'
         end
       end
-      resources :quotes, only: :update
     end
   end
 
