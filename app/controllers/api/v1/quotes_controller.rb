@@ -5,8 +5,23 @@ class Api::V1::QuotesController < Api::V1::BaseController
     @quote = @person.quotes.order("RANDOM()").first
   end
 
+<<<<<<< HEAD
   def all; end
 
+=======
+
+  def all; end
+
+  def update
+    @quote = Quote.find(params[:id])
+    if @quote.update(quote_params)
+      render :show
+    else
+      render_error
+    end
+  end
+
+>>>>>>> 3e783c9f797d652bf71fa47210debe88c8a7f436
   def create
     @quote = Quote.new(content: params[:quote])
     @quote.person = Person.find_by(name: params[:person].downcase)

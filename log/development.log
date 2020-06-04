@@ -2308,3 +2308,28 @@ Processing by Api::V1::QuotesController#create as JSON
 Completed 500 Internal Server Error in 746ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 123619)
 
 
+Started POST "/api/v1/quotes?person=lucadadsadasd&quote=sdaadcds" for ::1 at 2020-06-04 17:03:48 -0300
+  [1m[35m (16.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::QuotesController#create as JSON
+  Parameters: {"person"=>"lucadadsadasd", "quote"=>"sdaadcds"}
+  [1m[36mPerson Load (27.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "lucadadsadasd"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:12:in `create'
+Completed 500 Internal Server Error in 550ms (Views: 0.8ms | ActiveRecord: 175.8ms | Allocations: 128122)
+
+
+Started POST "/api/v1/quotes?person=milene&quote=sdaadcds" for ::1 at 2020-06-04 17:03:58 -0300
+Processing by Api::V1::QuotesController#create as JSON
+  Parameters: {"person"=>"milene", "quote"=>"sdaadcds"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:12:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/quotes_controller.rb:13:in `create'
+  [1m[36mQuote Create (132.3ms)[0m  [1m[32mINSERT INTO "quotes" ("content", "person_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "sdaadcds"], ["person_id", 1], ["created_at", "2020-06-04 20:03:58.953844"], ["updated_at", "2020-06-04 20:03:58.953844"]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:13:in `create'
+  [1m[35m (36.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/quotes_controller.rb:13:in `create'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 22.1ms | Allocations: 410)
+Completed 201 Created in 296ms (Views: 117.8ms | ActiveRecord: 169.6ms | Allocations: 9971)
+
+
