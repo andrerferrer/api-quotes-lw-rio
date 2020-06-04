@@ -4,12 +4,11 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :quotes, only: [ :show ], param: :slug do
+      resources :quotes, only: [ :show, :create ], param: :slug do
         member do
           get :all, to: 'quotes#all'
         end
       end
-      resources :quotes, only: :update
     end
   end
 
