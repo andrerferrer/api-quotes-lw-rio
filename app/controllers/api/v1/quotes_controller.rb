@@ -1,5 +1,5 @@
 class Api::V1::QuotesController < Api::V1::BaseController
-  before_action :set_person, only: %i[ show all ]
+  before_action :set_person, only: %i[ show all update destroy ]
 
   def show
     @quote = @person.quotes.order("RANDOM()").first
@@ -21,6 +21,12 @@ class Api::V1::QuotesController < Api::V1::BaseController
   	@quote = Quote.new( person: Person.first, content: "Testando")
   	@quote.save
   	render :show
+  end
+
+  def destroy
+    @quote = Quote.find(params[:id])
+    @quote.destroy
+    head :no_content
   end
 
   private
