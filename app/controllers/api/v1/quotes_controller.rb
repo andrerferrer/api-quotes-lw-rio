@@ -5,7 +5,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
     @quote = @person.quotes.order("RANDOM()").first
   end
 
-
   def all; end
 
   def update
@@ -18,9 +17,13 @@ class Api::V1::QuotesController < Api::V1::BaseController
   end
 
   def create
-  	@quote = Quote.new( person: Person.first, content: "Testando")
-  	@quote.save
-  	render :show
+    @quote = Quote.new(content: params[:content])
+    @quote.person = Person.find_by(name: params[:person].downcase)
+    if @quote.save
+      render :show, status: :created
+    else
+      render_error
+    end
   end
 
   private
