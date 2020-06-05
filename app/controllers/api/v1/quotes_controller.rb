@@ -17,7 +17,7 @@ class Api::V1::QuotesController < Api::V1::BaseController
   end
 
   def create
-    @quote = Quote.new(content: params[:quote])
+    @quote = Quote.new(content: params[:content])
     @quote.person = Person.find_by(name: params[:person].downcase)
     if @quote.save
       render :show, status: :created
