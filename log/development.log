@@ -2333,3 +2333,1089 @@ Processing by Api::V1::QuotesController#create as JSON
 Completed 201 Created in 296ms (Views: 117.8ms | ActiveRecord: 169.6ms | Allocations: 9971)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6459969005666005410)[0m
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (64.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6459969005666005410)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-06-08 12:03:06 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 236)
+[Webpacker] Compiling...
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:03:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+[Webpacker] Compiled all packs in /home/lucas/code/andreferrer/api-quotes-lw-rio/public/packs
+[Webpacker] Hash: d2cd476533c5813d32d8
+Version: webpack 4.43.0
+Time: 3884ms
+Built at: 06/08/2020 12:03:20 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5c033dd0d55ecede0aa5.js    609 KiB  application  [emitted] [immutable]  application
+js/application-5c033dd0d55ecede0aa5.js.map    747 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5c033dd0d55ecede0aa5.js js/application-5c033dd0d55ecede0aa5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.18 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 13394ms (Views: 13386.0ms | ActiveRecord: 0.0ms | Allocations: 179911)
+
+
+Started GET "/" for ::1 at 2020-06-08 12:03:20 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 9749)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:03:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:03:26 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (43.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.6ms | Allocations: 130)
+Completed 200 OK in 254ms (Views: 2.0ms | ActiveRecord: 61.2ms | Allocations: 15702)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:03:27 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 12ms (Views: 1.4ms | ActiveRecord: 1.8ms | Allocations: 1948)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:03:28 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 54)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.6ms | Allocations: 1900)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:03:28 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.5ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.2ms | Allocations: 55)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 1928)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:03:29 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 1.6ms | Allocations: 1937)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:03:29 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.5ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.6ms | ActiveRecord: 1.7ms | Allocations: 1915)
+
+
+Started GET "/login" for ::1 at 2020-06-08 12:03:39 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:03:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sign_up" for ::1 at 2020-06-08 12:03:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:03:56 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:04:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-08 12:06:49 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 9851)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:06:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:00 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.7ms | Allocations: 1928)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:02 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 1.7ms | Allocations: 1911)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:03 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 1.7ms | Allocations: 1925)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:03 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 54)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1912)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:03 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 54)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1914)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:04 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1924)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:04 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1917)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:05 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1926)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:05 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 1.6ms | Allocations: 1922)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:05 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 60)
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 1.5ms | Allocations: 1917)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:06 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1916)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:06 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1925)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:06 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 54)
+Completed 200 OK in 10ms (Views: 1.6ms | ActiveRecord: 1.5ms | Allocations: 1906)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:07 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.4ms | Allocations: 1927)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:07 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.4ms | Allocations: 1914)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:08 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 1.7ms | Allocations: 1919)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:08 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 54)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1926)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:09 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 54)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1898)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:10 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.2ms | Allocations: 60)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 1.3ms | Allocations: 1920)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:10 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 54)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 1.9ms | Allocations: 1901)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:11 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.2ms | Allocations: 60)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.7ms | Allocations: 1915)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:12 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 60)
+Completed 200 OK in 12ms (Views: 1.6ms | ActiveRecord: 1.8ms | Allocations: 1921)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:12 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.4ms | Allocations: 1923)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:13 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 1.5ms | Allocations: 1913)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:13 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 54)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1910)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:14 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 1.5ms | Allocations: 1924)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:14 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 1.6ms | Allocations: 1919)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:15 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.1ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 1.8ms | Allocations: 1919)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:15 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.6ms | Allocations: 1919)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:18 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 1.5ms | Allocations: 1920)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-08 12:07:20 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:36:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.3ms | Allocations: 60)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 1.5ms | Allocations: 1905)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:07:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-08 12:09:55 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 10022)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:09:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sign_up" for ::1 at 2020-06-08 12:10:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:10:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sign_up" for ::1 at 2020-06-08 12:10:19 -0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:10:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2020-06-08 12:10:37 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 527)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 182.7ms | Allocations: 23184)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 337ms (Views: 295.7ms | ActiveRecord: 11.9ms | Allocations: 68402)
+
+
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:10:40 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:10:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2020-06-08 12:11:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
