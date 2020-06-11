@@ -4,6 +4,17 @@
   <p>Look for /api/v1/quotes/:person_name and have fun </p>
   <p>You can check for all of the person's quotes at: /api/v1/quotes/:person_name/all </p>
 
+<!-- Devise test -->
+  <% if current_user %>
+    <hr>
+    <p>You are loged in!</p>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    <hr>
+  <% else %>
+    <%= link_to "Login", new_user_session_path %>
+    <br><br>
+  <% end %>
+<!-- End of Devise test -->
 
   <button>Click here to receive a MOMilene quote</button>
   <p id="person"></p>
