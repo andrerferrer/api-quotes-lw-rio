@@ -29,6 +29,12 @@ class Api::V1::QuotesController < Api::V1::BaseController
     authorize @quote
   end
 
+  def destroy
+    @quote = Quote.find(params[:id])
+    @quote.destroy
+    head :no_content
+  end
+
   private
 
   def quote_params
