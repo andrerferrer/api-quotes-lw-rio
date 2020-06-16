@@ -11,6 +11,7 @@ Rails.application.routes.draw do
         end
       end
       resources :quotes, only: [ :update, :destroy]
+      resources :people, only: [:index, :new, :create]
     end
   end
 
