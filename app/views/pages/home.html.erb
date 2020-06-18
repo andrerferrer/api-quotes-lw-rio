@@ -7,7 +7,7 @@
 <!-- Devise test -->
   <% if current_user %>
     <hr>
-    <p>You are loged in!</p>
+    <p>You are logged in!</p>
     <%= link_to "Log out", destroy_user_session_path, method: :delete %>
     <hr>
   <% else %>
