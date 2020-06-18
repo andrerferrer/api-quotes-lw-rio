@@ -3,7 +3,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
 
   def show
     @quote = @person.quotes.order("RANDOM()").first
-    authorize @quote
   end
 
   def all; end
@@ -15,7 +14,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
     else
       render_error
     end
-    authorize @quote
   end
 
   def create
@@ -26,7 +24,6 @@ class Api::V1::QuotesController < Api::V1::BaseController
     else
       render_error
     end
-    authorize @quote
   end
 
   def destroy
