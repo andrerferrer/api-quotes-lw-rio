@@ -2333,6 +2333,7 @@ Processing by Api::V1::QuotesController#create as JSON
 Completed 201 Created in 296ms (Views: 117.8ms | ActiveRecord: 169.6ms | Allocations: 9971)
 
 
+<<<<<<< HEAD
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6459969005666005410)[0m
   [1m[35m (25.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (64.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
@@ -2383,6 +2384,19 @@ puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Version: webpack 4.43.0
 Time: 3884ms
 Built at: 06/08/2020 12:03:20 PM
+=======
+Started GET "/" for ::1 at 2020-06-11 19:54:31 -0300
+  [1m[35m (51.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 236)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/raquel/code/raquelgraca/api-quotes-lw-rio/public/packs
+[Webpacker] Hash: d2cd476533c5813d32d8
+Version: webpack 4.43.0
+Time: 1628ms
+Built at: 06/11/2020 7:54:40 PM
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
                                      Asset       Size       Chunks                         Chunk Names
     js/application-5c033dd0d55ecede0aa5.js    609 KiB  application  [emitted] [immutable]  application
 js/application-5c033dd0d55ecede0aa5.js.map    747 KiB  application  [emitted] [dev]        application
@@ -2391,6 +2405,7 @@ Entrypoint application = js/application-5c033dd0d55ecede0aa5.js js/application-5
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 1.18 KiB {application} [built]
+<<<<<<< HEAD
 [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
     + 6 hidden modules
 
@@ -5408,6 +5423,17 @@ Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 9996
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:53:45 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 6 hidden modules
+
+Completed 200 OK in 7126ms (Views: 7025.6ms | ActiveRecord: 0.0ms | Allocations: 123122)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 19:55:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/quotes/milene"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -5439,9 +5465,15 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:53:45 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 19:55:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/quotes/milene"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -5473,9 +5505,15 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:53:45 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1/quotes/:person_name" for ::1 at 2020-06-11 19:56:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/quotes/:person_name"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -5507,6 +5545,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:53:46 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
@@ -5546,6 +5585,132 @@ Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:53:46 -0300
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/quotes/:person_name" for ::1 at 2020-06-11 20:02:00 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>":person_name"}
+  [1m[36mPerson Load (61.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", ":person_name"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+Completed 500 Internal Server Error in 260ms (Views: 4.3ms | ActiveRecord: 167.1ms | Allocations: 4447)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 20:02:08 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (104.0ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (52.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.6ms | Allocations: 240)
+Completed 200 OK in 512ms (Views: 4.0ms | ActiveRecord: 243.1ms | Allocations: 12293)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 20:02:16 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.2ms | Allocations: 61)
+Completed 200 OK in 39ms (Views: 19.9ms | ActiveRecord: 1.8ms | Allocations: 1949)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 20:02:17 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 61)
+Completed 200 OK in 10ms (Views: 1.9ms | ActiveRecord: 1.6ms | Allocations: 1941)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 20:02:18 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.1ms | Allocations: 61)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1945)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 20:02:19 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.1ms | Allocations: 60)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1933)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-11 20:02:21 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (1.0ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.4ms | Allocations: 61)
+Completed 200 OK in 12ms (Views: 1.7ms | ActiveRecord: 1.6ms | Allocations: 1953)
+
+
+Started GET "/api/v1/quotes/milene/all" for ::1 at 2020-06-11 20:02:52 -0300
+Processing by Api::V1::QuotesController#all as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  Rendering api/v1/quotes/all.json.jbuilder
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1[0m  [["person_id", 11]]
+  ↳ app/views/api/v1/quotes/all.json.jbuilder:2
+  Rendered api/v1/quotes/all.json.jbuilder (Duration: 2.1ms | Allocations: 1691)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 2844)
+
+
+Started GET "/api/v1/people/new" for ::1 at 2020-06-11 20:03:18 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5575,6 +5740,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:53:46 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
@@ -5614,6 +5780,39 @@ Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:54:15 -0300
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 20:04:17 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5643,11 +5842,45 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:54:16 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 21:08:11 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5677,6 +5910,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2020-06-11 14:54:57 -0300
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
@@ -5690,6 +5924,39 @@ Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:54:59 -0300
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 21:09:20 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5719,6 +5986,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2020-06-11 14:55:06 -0300
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
@@ -5732,6 +6000,39 @@ Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:08 -0300
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 21:10:28 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5761,6 +6062,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2020-06-11 14:55:17 -0300
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
@@ -5772,6 +6074,11 @@ Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 112
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:19 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1/admin/people" for ::1 at 2020-06-11 21:11:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/admin/people"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -5803,6 +6110,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/users/sign_in" for ::1 at 2020-06-11 14:55:19 -0300
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.erb within layouts/application
@@ -5833,6 +6141,11 @@ Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 10889
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:23 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1/people/admin" for ::1 at 2020-06-11 21:11:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/people/admin"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -5864,11 +6177,45 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:23 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 21:12:24 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5898,6 +6245,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started DELETE "/users/sign_out" for ::1 at 2020-06-11 14:55:25 -0300
 Processing by Devise::SessionsController#destroy as HTML
   Parameters: {"authenticity_token"=>"koN2XRA4Yh/+RkZuamLqpJbYX0/mDuJcCypnpiTudeuKlUoal3RTz/jQ7Zxw4X3LHdrcdyVY2LB2QuWN6LnSEQ=="}
@@ -5917,6 +6265,11 @@ Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 10006
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:27 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1" for ::1 at 2020-06-11 21:55:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -5948,11 +6301,45 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:27 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 21:55:12 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -5982,11 +6369,45 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:56 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people/new" for ::1 at 2020-06-11 21:55:28 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::Admin):
+  
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -6016,11 +6437,47 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:55:56 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+=======
+Started GET "/api/v1/people/new" for ::1 at 2020-06-11 21:57:22 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for Api::V1::PeopleController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
 web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
 web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
@@ -6050,6 +6507,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/users/sign_in" for ::1 at 2020-06-11 14:58:28 -0300
 Processing by Devise::SessionsController#new as HTML
   Rendering devise/sessions/new.html.erb within layouts/application
@@ -6130,6 +6588,54 @@ puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:58:31 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:08:11 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  Rendered api/v1/people/index.json.jbuilder (Duration: 16.8ms | Allocations: 1320)
+Completed 500 Internal Server Error in 252ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4185)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:08:52 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 306.8ms | Allocations: 5145)
+Completed 500 Internal Server Error in 311ms (Views: 3.1ms | ActiveRecord: 289.1ms | Allocations: 6786)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:09:08 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.9ms | Allocations: 2149)
+Completed 500 Internal Server Error in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 3790)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:09:10 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.6ms | Allocations: 2066)
+Completed 500 Internal Server Error in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 3397)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:09:33 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 1001)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1596)
+
+
+Started POST "/api/v1/people/new" for ::1 at 2020-06-11 22:13:51 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/people/new"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -6161,6 +6667,7 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:58:33 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
@@ -6198,6 +6705,20 @@ puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:58:33 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:14:12 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 995)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1593)
+
+
+Started POST "/api/v1/people/new" for ::1 at 2020-06-11 22:14:28 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/people/new"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -6229,9 +6750,15 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:59:02 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started POST "/api/v1/people/new" for ::1 at 2020-06-11 22:14:41 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/people/new"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -6263,9 +6790,15 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/serviceworker.js" for ::1 at 2020-06-11 14:59:02 -0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+=======
+Started POST "/api/v1/people/new" for ::1 at 2020-06-11 22:15:03 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/people/new"):
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
   
 actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
 web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
@@ -6297,3 +6830,166 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
+=======
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:15:47 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"people"=>{"name"=>"ciro"}, "person"=>{}}
+Completed 500 Internal Server Error in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1647)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:19:08 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"people"=>{"name"=>"ciro"}, "person"=>{}}
+Completed 500 Internal Server Error in 1ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 1155)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:22:21 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"people"=>{"name"=>"ciro"}, "person"=>{}}
+Completed 500 Internal Server Error in 1ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 1152)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:24:41 -0300
+  [1m[35m (21.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"people"=>{"name"=>"ciro"}, "person"=>{}}
+Completed 500 Internal Server Error in 8ms (Views: 1.0ms | ActiveRecord: 3.1ms | Allocations: 1250)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:24:44 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"people"=>{"name"=>"ciro"}, "person"=>{}}
+Completed 500 Internal Server Error in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1206)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:24:53 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (1.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 42.6ms | Allocations: 3675)
+Completed 200 OK in 75ms (Views: 49.9ms | ActiveRecord: 6.3ms | Allocations: 4931)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:25:34 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"ciro"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:11:in `create'
+  [1m[36mPerson Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "ciro"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:11:in `create'
+  [1m[36mPerson Create (184.6ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ciro"], ["created_at", "2020-06-12 01:25:34.697552"], ["updated_at", "2020-06-12 01:25:34.697552"]]
+  ↳ app/controllers/api/v1/people_controller.rb:11:in `create'
+  [1m[35m (66.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:11:in `create'
+Completed 500 Internal Server Error in 326ms (Views: 7.1ms | ActiveRecord: 251.4ms | Allocations: 8781)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:28:55 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"ciro"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "ciro"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+No template found for Api::V1::PeopleController#create, rendering head :no_content
+Completed 204 No Content in 169ms (ActiveRecord: 3.3ms | Allocations: 13229)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:29:06 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 3.3ms | Allocations: 1061)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1666)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:31:02 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>" "}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:12:in `create'
+  [1m[36mPerson Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", " "], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:12:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/people_controller.rb:12:in `create'
+No template found for Api::V1::PeopleController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 3.2ms | Allocations: 8185)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:33:36 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"ciro"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "ciro"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+No template found for Api::V1::PeopleController#create, rendering head :no_content
+Completed 204 No Content in 9ms (ActiveRecord: 2.9ms | Allocations: 6419)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:33:55 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.1ms | Allocations: 1060)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1665)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:34:58 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 14.6ms | Allocations: 4124)
+Completed 200 OK in 25ms (Views: 11.3ms | ActiveRecord: 5.0ms | Allocations: 6736)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:35:13 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"robin"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "robin"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Create (0.4ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "robin"], ["created_at", "2020-06-12 01:35:13.719320"], ["updated_at", "2020-06-12 01:35:13.719320"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 78ms (Views: 6.6ms | ActiveRecord: 42.4ms | Allocations: 6926)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-11 22:38:47 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"robinho"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "robinho"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Create (0.2ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "robinho"], ["created_at", "2020-06-12 01:38:47.297918"], ["updated_at", "2020-06-12 01:38:47.297918"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[35m (28.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  Rendering api/v1/people/show.json.jbuilder
+  Rendered api/v1/people/show.json.jbuilder (Duration: 0.9ms | Allocations: 111)
+Completed 201 Created in 48ms (Views: 3.3ms | ActiveRecord: 28.8ms | Allocations: 4309)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-11 22:38:56 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1134)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1565)
+
+
+>>>>>>> 4ac143eb0c7a40dee236714f1082e3559e60946a
