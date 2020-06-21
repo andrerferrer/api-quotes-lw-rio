@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Admin Page</h1>
+      <div class="card" >
+        <h3>Who is already in:</h3>
+         <p id="person-name"></p>
+      </div>
+        <% end %>
+    <h3>Hey! Who do you want to include inside this Wagon now?</h3>
+    <button id="add-person">Add a person</button>
+  <%= link_to root_path %>
+</div>
+
+  <script>
+
+    const showPeople = (data) => {
+      document.getElementById("person-name").innerText = data.people
+    }
+
+    const fetchApi = (event) => {
+      const url = "api/v1/people"
+      fetch(url)
+        .then(res => res.json())
+        .then(showPeople)
+    }
+
+    const leWagon = window.addEventListener('load', fetchApi)
+
+    const btn = document.querySelector("button")
+    btn.addEventListener('click', fetchApi)
+
+  </script>
