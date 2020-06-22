@@ -1,31 +1,38 @@
-<div class="container">
-  <h1>Admin Page</h1>
-      <div class="card" >
-        <h3>Who is already in:</h3>
-         <p id="person-name"></p>
-      </div>
-        <% end %>
-    <h3>Hey! Who do you want to include inside this Wagon now?</h3>
-    <button id="add-person">Add a person</button>
-  <%= link_to root_path %>
-</div>
+<div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <button><%= link_to "Home", root_path %> </button>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+       <p id="person-name"></p>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+      <form id="new_person"> <!-- No need for action or method attributes  -->
+        <input type="text" id="person_name">
+        <input type="submit" id="add-person" value="Add a person">
+      </form>
+    </div>
+
 
   <script>
 
     const showPeople = (data) => {
-      document.getElementById("person-name").innerText = data.people
+      document.getElementById("person-name").innerText = data
     }
 
-    const fetchApi = (event) => {
-      const url = "api/v1/people"
+    const fetchPeople = (event) => {
+      const url = "/api/v1/people"
       fetch(url)
         .then(res => res.json())
         .then(showPeople)
     }
 
-    const leWagon = window.addEventListener('load', fetchApi)
+    const leWagon = window.addEventListener('load', fetchPeople)
 
-    const btn = document.querySelector("button")
-    btn.addEventListener('click', fetchApi)
+    // const btn = document.querySelector("button")
+    // btn.addEventListener('click', fetchPeople)
 
   </script>
+</div>

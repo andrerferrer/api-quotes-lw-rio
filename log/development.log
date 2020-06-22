@@ -8749,3 +8749,1493 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-21 21:01:37 -0300
+  [1m[35m (79.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.1) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6459969005666005410)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAdminToUser (20200608152406)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (627.1ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200608152406"]]
+  [1m[35m (59.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (38.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(6459969005666005410)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-06-21 21:02:06 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 505)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 734ms (Views: 715.7ms | ActiveRecord: 0.0ms | Allocations: 39969)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-06-21 21:02:17 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 16.8ms | Allocations: 623)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 332.0ms | Allocations: 25216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 378ms (Views: 354.6ms | ActiveRecord: 3.1ms | Allocations: 43286)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-06-21 21:02:41 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"EEatf9hncUjdEW4Yxd4K0BDb7gMAAKiZL9DxUCXXAoUbh4Z3LUlUk44P4ZlKfqoirOBbpZ+a88FIpt89xPHDLQ==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "teste@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 14ms (ActiveRecord: 1.7ms | Allocations: 2719)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"EEatf9hncUjdEW4Yxd4K0BDb7gMAAKiZL9DxUCXXAoUbh4Z3LUlUk44P4ZlKfqoirOBbpZ+a88FIpt89xPHDLQ==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 7941)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 174ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 19146)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-06-21 21:02:52 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"4WjdRTQlBZYFe+xn7vUYbs1XigXEiePgbcOmK+VqhxEqRKOeBB8ivLM8K/vI5yT3DaDfQziEZzjyMbn/l+Vrcw==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "teste@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.3ms | Allocations: 1913)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"4WjdRTQlBZYFe+xn7vUYbs1XigXEiePgbcOmK+VqhxEqRKOeBB8ivLM8K/vI5yT3DaDfQziEZzjyMbn/l+Vrcw==", "user"=>{"email"=>"teste@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 7947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 125ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 17862)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-06-21 21:02:57 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 124)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 60.3ms | Allocations: 6876)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 74.9ms | ActiveRecord: 0.0ms | Allocations: 17578)
+
+
+Started POST "/users" for ::1 at 2020-06-21 21:03:18 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"WaYM2c95DQmqRzVglNJkgsNqRgpmnEnVUoxUe4UJqDgE7u8r+b81clo8AN/0YudjPKHumGS8SwoRPlmQ7K7/zg==", "user"=>{"email"=>"teste1@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste1@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (223.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "teste1@email.com"], ["encrypted_password", "$2a$11$bR/6D1.KRoq25vjdWz2P9udndjdh5JfXBScWXKvYtCgjP1hJn8OBS"], ["created_at", "2020-06-22 00:03:18.876342"], ["updated_at", "2020-06-22 00:03:18.876342"]]
+  [1m[35m (60.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 445ms (ActiveRecord: 284.1ms | Allocations: 10830)
+
+
+Started GET "/" for ::1 at 2020-06-21 21:03:19 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms | Allocations: 10932)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:03:31 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1084)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.3ms | Allocations: 4387)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h1>Admin Page</h1>
+      <div class="card" >
+        <h3>Who is already in:</h3>
+         <p id="person-name"></p>
+      </div>
+        <% end %>
+    <h3>Hey! Who do you want to include inside this Wagon now?</h3>
+    <button id="add-person">Add a person</button>
+  <%= link_to root_path %>
+</div>
+
+  <script>
+
+    const showPeople = (data) => {
+      document.getElementById("person-name").innerText = data.people
+    }
+
+    const fetchApi = (event) => {
+      const url = "api/v1/people"
+      fetch(url)
+        .then(res => res.json())
+        .then(showPeople)
+    }
+
+    const leWagon = window.addEventListener('load', fetchApi)
+
+    const btn = document.querySelector("button")
+    btn.addEventListener('click', fetchApi)
+
+  </script>
+
+):
+1:    <div class="container">
+2:      <h1>Admin Page</h1>
+3:          <div class="card" >
+4:            <h3>Who is already in:</h3>
+5:             <p id="person-name"></p>
+6:          </div>
+7:            <% end %>
+8:        <h3>Hey! Who do you want to include inside this Wagon now?</h3>
+9:        <button id="add-person">Add a person</button>
+10:      <%= link_to root_path %>
+11:    </div>
+12:    
+13:      <script>
+14:    
+15:        const showPeople = (data) => {
+16:          document.getElementById("person-name").innerText = data.people
+17:        }
+18:    
+19:        const fetchApi = (event) => {
+20:          const url = "api/v1/people"
+21:          fetch(url)
+22:            .then(res => res.json())
+23:            .then(showPeople)
+24:        }
+25:    
+26:        const leWagon = window.addEventListener('load', fetchApi)
+27:    
+28:        const btn = document.querySelector("button")
+29:        btn.addEventListener('click', fetchApi)
+30:    
+31:      </script>
+  
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+Started GET "/admin" for ::1 at 2020-06-21 21:51:41 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1083)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 4048)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <h1>Admin Page</h1>
+      <div class="card" >
+        <h3>Who is already in:</h3>
+         <p id="person-name"></p>
+      </div>
+        <% end %>
+    <h3>Hey! Who do you want to include inside this Wagon now?</h3>
+    <button id="add-person">Add a person</button>
+  <%= link_to root_path %>
+
+  <script>
+
+    const showPeople = (data) => {
+      document.getElementById("person-name").innerText = data.people
+    }
+
+    const fetchApi = (event) => {
+      const url = "api/v1/people"
+      fetch(url)
+        .then(res => res.json())
+        .then(showPeople)
+    }
+
+    const leWagon = window.addEventListener('load', fetchApi)
+
+    const btn = document.querySelector("button")
+    btn.addEventListener('click', fetchApi)
+
+  </script>
+</div>
+
+):
+1:    <div class="container">
+2:      <h1>Admin Page</h1>
+3:          <div class="card" >
+4:            <h3>Who is already in:</h3>
+5:             <p id="person-name"></p>
+6:          </div>
+7:            <% end %>
+8:        <h3>Hey! Who do you want to include inside this Wagon now?</h3>
+9:        <button id="add-person">Add a person</button>
+10:      <%= link_to root_path %>
+11:    
+12:      <script>
+13:    
+14:        const showPeople = (data) => {
+15:          document.getElementById("person-name").innerText = data.people
+16:        }
+17:    
+18:        const fetchApi = (event) => {
+19:          const url = "api/v1/people"
+20:          fetch(url)
+21:            .then(res => res.json())
+22:            .then(showPeople)
+23:        }
+24:    
+25:        const leWagon = window.addEventListener('load', fetchApi)
+26:    
+27:        const btn = document.querySelector("button")
+28:        btn.addEventListener('click', fetchApi)
+29:    
+30:      </script>
+31:    </div>
+  
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:34: syntax error, unexpected end, expecting end-of-input
+Started GET "/admin" for ::1 at 2020-06-21 21:54:20 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.7ms | Allocations: 749)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 649)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 192)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.3ms | Allocations: 14464)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:54:20 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (42.7ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 67.9ms | Allocations: 3855)
+Completed 200 OK in 69ms (Views: 22.9ms | ActiveRecord: 45.5ms | Allocations: 4645)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:54:30 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.1ms | Allocations: 1063)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1492)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:56:08 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 13889)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:56:09 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.1ms | Allocations: 1133)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1855)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:56:27 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.6ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.4ms | Allocations: 13876)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:57:07 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 174)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 13808)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:57:08 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.2ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1857)
+
+
+Started GET "/" for ::1 at 2020-06-21 21:57:12 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 232)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 11619)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:57:23 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 240)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 21)
+Completed 200 OK in 20ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 11818)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:57:24 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.0ms | Allocations: 1062)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1486)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:58:00 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 13825)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:58:01 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.6ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1840)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:58:23 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 13824)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:58:24 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.7ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1833)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:58:55 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.7ms | Allocations: 175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 32ms (Views: 25.4ms | ActiveRecord: 0.5ms | Allocations: 13814)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:58:56 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.8ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1843)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:59:44 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 13807)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:59:46 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.2ms | Allocations: 1501)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.3ms | Allocations: 2239)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 21:59:58 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 32ms (Views: 23.7ms | ActiveRecord: 0.6ms | Allocations: 13822)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 21:59:59 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.3ms | Allocations: 1133)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1834)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:00:08 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.1ms | Allocations: 13805)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:00:09 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.8ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1851)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:00:56 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.3ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 0.5ms | Allocations: 13817)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:00:58 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.0ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1873)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:01:12 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 13817)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:01:13 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.8ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1849)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:01:31 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 619)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.2ms | Allocations: 13828)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:01:32 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.1ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1852)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:01:45 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 182)
+Completed 200 OK in 33ms (Views: 25.1ms | ActiveRecord: 0.6ms | Allocations: 13827)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:01:46 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.2ms | Allocations: 1133)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1857)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:01:56 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 34ms (Views: 26.6ms | ActiveRecord: 0.5ms | Allocations: 13817)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:01:57 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.8ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1853)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:02:35 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 13809)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:02:36 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.9ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1843)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:02:50 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 33ms (Views: 25.3ms | ActiveRecord: 0.6ms | Allocations: 13809)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:02:51 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.4ms | Allocations: 1134)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:03:06 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.6ms | Allocations: 182)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 13829)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:03:07 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.0ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:03:15 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 13813)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:03:16 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.9ms | Allocations: 1133)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.7ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:03:42 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 13815)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:03:43 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1843)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:04:58 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 13820)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:04:59 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 13.8ms | Allocations: 1133)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms | Allocations: 1867)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:05:10 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 182)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 13845)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:05:11 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.2ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1848)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:05:20 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 29ms (Views: 21.1ms | ActiveRecord: 0.6ms | Allocations: 13817)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:05:21 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1841)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:05:29 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.7ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 24ms (Views: 17.0ms | ActiveRecord: 0.5ms | Allocations: 13817)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:05:30 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.4ms | Allocations: 1133)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:06:29 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 13818)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:06:30 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.9ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1851)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:06:40 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.8ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 619)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.3ms | Allocations: 13836)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:06:41 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.1ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1844)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:07:00 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 182)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 13816)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:07:01 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.0ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1859)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:07:10 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 614)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | Allocations: 182)
+Completed 200 OK in 30ms (Views: 21.5ms | ActiveRecord: 0.6ms | Allocations: 13815)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:07:11 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1845)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:11:32 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 242)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 11820)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:11:32 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.2ms | Allocations: 1062)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1483)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:14:41 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.6ms | Allocations: 1063)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1479)
+
+
+Started GET "/" for ::1 at 2020-06-21 22:14:41 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 232)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.9ms | Allocations: 11630)
+
+
+Started GET "/" for ::1 at 2020-06-21 22:16:39 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/home.html.erb:8
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms | Allocations: 12136)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-21 22:16:41 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (40.4ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.9ms | Allocations: 126)
+Completed 200 OK in 111ms (Views: 2.6ms | ActiveRecord: 48.3ms | Allocations: 9144)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-21 22:16:48 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (0.3ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.1ms | Allocations: 60)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 1951)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:16:56 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 11700)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:16:56 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.2ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:17:03 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.3ms | Allocations: 11421)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:17:04 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1062)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1493)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:17:16 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.2ms | Allocations: 1063)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1489)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:18:02 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 12626)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:18:02 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.4ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1851)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:18:06 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 20.9ms | ActiveRecord: 0.6ms | Allocations: 11425)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:18:07 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.9ms | Allocations: 1062)
+Completed 200 OK in 15ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1493)
+
+
+Started GET "/api/v1/quotes/milene" for ::1 at 2020-06-21 22:20:37 -0300
+Processing by Api::V1::QuotesController#show as JSON
+  Parameters: {"slug"=>"milene"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "milene"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:42:in `set_person'
+  [1m[36mQuote Load (0.2ms)[0m  [1m[34mSELECT "quotes".* FROM "quotes" WHERE "quotes"."person_id" = $1 ORDER BY RANDOM() LIMIT $2[0m  [["person_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/quotes_controller.rb:5:in `show'
+  Rendering api/v1/quotes/show.json.jbuilder
+  Rendered api/v1/quotes/show.json.jbuilder (Duration: 0.2ms | Allocations: 121)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 2287)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:22:13 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.2ms | Allocations: 1063)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1480)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:29:31 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.6ms | Allocations: 12726)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:29:32 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 3.4ms | Allocations: 1133)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 1848)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:29:34 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 11425)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:29:35 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 1062)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1475)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:29:54 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 179)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 22.3ms | ActiveRecord: 0.7ms | Allocations: 12602)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:29:55 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1851)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:30:27 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 12610)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:30:28 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.4ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1841)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:30:48 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.4ms | Allocations: 12613)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:31:37 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 12622)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:31:38 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.7ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:31:56 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 22.2ms | ActiveRecord: 0.6ms | Allocations: 12617)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:31:57 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1845)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:32:20 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 12602)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:32:21 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1853)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:32:26 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 12612)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:32:27 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.4ms | Allocations: 1134)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1855)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:35:27 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.4ms | Allocations: 12623)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:35:28 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.7ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1841)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:39:02 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 12595)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:39:03 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.6ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1843)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:39:17 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 12606)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:39:18 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.9ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:39:27 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.6ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 12593)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:39:28 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.4ms | Allocations: 1134)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1841)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:39:38 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 12610)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:39:38 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.2ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1853)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:39:58 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 12597)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:39:58 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.8ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1839)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:40:13 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 21.6ms | ActiveRecord: 0.5ms | Allocations: 12610)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:40:14 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.7ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1847)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:46:45 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.9ms | Allocations: 12727)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:46:46 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.8ms | Allocations: 1134)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1833)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:47:00 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 12615)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:47:01 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1835)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:47:13 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 12608)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:47:14 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.5ms | Allocations: 1133)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1843)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:50:26 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.1ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 21.7ms | ActiveRecord: 0.6ms | Allocations: 12611)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:50:27 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.4ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1845)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:55:30 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 17.8ms | ActiveRecord: 0.8ms | Allocations: 12598)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:55:31 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.7ms | Allocations: 1134)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1857)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:57:19 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 12631)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:58:47 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 12627)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 22:59:02 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 21.3ms | ActiveRecord: 0.6ms | Allocations: 12610)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 22:59:03 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.9ms | Allocations: 1133)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1845)
+
+
+Started GET "/admin" for ::1 at 2020-06-21 23:02:12 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 181)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 12614)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-21 23:02:13 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.2ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1839)
+
+
