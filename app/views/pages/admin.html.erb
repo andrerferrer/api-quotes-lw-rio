@@ -11,8 +11,8 @@
     </div>
     <div class="card mt-5 p-4">
       <h5>Hey! Who do you want to add inside this Wagon?</h5>
-      <form id="new_person"> <!-- No need for action or method attributes  -->
-        <input type="text" id="person_name">
+      <form id="new-person"> <!-- No need for action or method attributes  -->
+        <input type="text" id="new-person-name">
         <input type="submit" id="add-person" value="Add a person">
       </form>
     </div>
@@ -37,8 +37,31 @@
 
     const leWagon = window.addEventListener('load', fetchPeople)
 
-    // const btn = document.querySelector("button")
-    // btn.addEventListener('click', fetchPeople)
+
+    //ADD a person
+    const newPerson = document.getElementById("new-person")
+    const newPersonInput = document.getElementById("new-person-name")
+
+    newPerson.addEventListener("submit", (event) => {
+      event.preventDefault();
+      fetch("/api/v1/people", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ person: { name: newPersonInput.value }})
+      })
+        .then(response => response.json())
+        .then((data) => {
+        })
+        newPerson.submit()
+        newPerson.reset()
+    })
+
+
+
+
 
   </script>
 </div>

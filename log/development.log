@@ -11087,3 +11087,254 @@ Processing by Api::V1::PeopleController#index as JSON
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1866)
 
 
+Started GET "/admin" for ::1 at 2020-06-22 21:19:35 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 0.8ms | Allocations: 12808)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:19:36 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.0ms | Allocations: 1133)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1876)
+
+
+Started POST "/restaurants" for ::1 at 2020-06-22 21:19:47 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/restaurants"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-06-22 21:20:05 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 11468)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:20:05 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.6ms | Allocations: 1062)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
+Started POST "/restaurants" for ::1 at 2020-06-22 21:20:20 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/restaurants"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-06-22 21:20:55 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 12698)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:20:56 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1133)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1871)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-22 21:21:07 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"brenoco"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "brenoco"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Create (149.9ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "brenoco"], ["created_at", "2020-06-23 00:21:07.366891"], ["updated_at", "2020-06-23 00:21:07.366891"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[35m (49.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  Rendering api/v1/people/show.json.jbuilder
+  Rendered api/v1/people/show.json.jbuilder (Duration: 41.7ms | Allocations: 110)
+Completed 201 Created in 258ms (Views: 43.6ms | ActiveRecord: 200.9ms | Allocations: 4605)
+
+
+Started GET "/admin" for ::1 at 2020-06-22 21:21:14 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 11466)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:21:15 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.1ms | Allocations: 1108)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 1556)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-22 21:23:32 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"Gemma The Queen"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "Gemma The Queen"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Create (0.1ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "gemma the queen"], ["created_at", "2020-06-23 00:23:32.258663"], ["updated_at", "2020-06-23 00:23:32.258663"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[35m (26.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  Rendering api/v1/people/show.json.jbuilder
+  Rendered api/v1/people/show.json.jbuilder (Duration: 0.9ms | Allocations: 106)
+Completed 201 Created in 35ms (Views: 3.2ms | ActiveRecord: 27.3ms | Allocations: 4424)
+
+
+Started GET "/admin" for ::1 at 2020-06-22 21:23:38 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.6ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 21.2ms | ActiveRecord: 0.8ms | Allocations: 12686)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:23:39 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.3ms | Allocations: 1225)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1792)
+
+
+Started GET "/admin" for ::1 at 2020-06-22 21:24:24 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.7ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 0.7ms | Allocations: 12679)
+
+
+Started GET "/admin" for ::1 at 2020-06-22 21:24:41 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 20.9ms | ActiveRecord: 0.6ms | Allocations: 12680)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:24:42 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.4ms | Allocations: 1225)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1974)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-22 21:25:08 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"Clelia"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "Clelia"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Create (0.9ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "clelia"], ["created_at", "2020-06-23 00:25:08.111085"], ["updated_at", "2020-06-23 00:25:08.111085"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+Started GET "/admin" for ::1 at 2020-06-22 21:25:08 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.5ms | Allocations: 11595)
+
+
+  [1m[35m (39.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  Rendering api/v1/people/show.json.jbuilder
+  Rendered api/v1/people/show.json.jbuilder (Duration: 0.3ms | Allocations: 105)
+Completed 201 Created in 55ms (Views: 0.9ms | ActiveRecord: 41.3ms | Allocations: 19444)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-22 21:25:08 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.1ms | Allocations: 1202)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1640)
+
+
