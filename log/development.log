@@ -11338,3 +11338,1591 @@ Processing by Api::V1::PeopleController#index as JSON
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1640)
 
 
+Started GET "/" for ::1 at 2020-06-26 20:29:29 -0300
+  [1m[35m (136.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 505)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 976ms (Views: 964.7ms | ActiveRecord: 0.0ms | Allocations: 40008)
+
+
+Started GET "/admin" for ::1 at 2020-06-26 20:29:39 -0300
+Processing by PagesController#admin as HTML
+Completed 401 Unauthorized in 110ms (ActiveRecord: 0.0ms | Allocations: 1147)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-06-26 20:29:40 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 623)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 95.4ms | Allocations: 15577)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 209ms (Views: 107.9ms | ActiveRecord: 66.8ms | Allocations: 33397)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-06-26 20:29:53 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Nfv7LuyYrhC2X0RtHWAUmqkdSE1r2GQjtQGBpmtiZ0x1q9wP+NF5HQY65QiOhGRzv4yJHOJ45UrbkcQD3AMa2A==", "user"=>{"email"=>"teste1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (63.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "teste1@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 83ms (ActiveRecord: 63.9ms | Allocations: 2558)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"Nfv7LuyYrhC2X0RtHWAUmqkdSE1r2GQjtQGBpmtiZ0x1q9wP+NF5HQY65QiOhGRzv4yJHOJ45UrbkcQD3AMa2A==", "user"=>{"email"=>"teste1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 7940)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 197ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 18432)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-06-26 20:30:01 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"j53W42zU4F3yJyK2Lx11MVsMyFivS0ZoPTIIuxiLV5PPzfHCeJ03UEJCg9O8+QXYTZ0JCSbrxwFTok0er+oqBw==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.7ms | Allocations: 1930)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"j53W42zU4F3yJyK2Lx11MVsMyFivS0ZoPTIIuxiLV5PPzfHCeJ03UEJCg9O8+QXYTZ0JCSbrxwFTok0er+oqBw==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 7948)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 17889)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-06-26 20:30:03 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"dEiCI8Gi2eZptKC1xxoLLobl0WPJ7WUwD+2/7oQttDg0GKUC1esO69nRAdBU/nvHkHQQMkBN5FlhffpLM0zJrA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 448)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"dEiCI8Gi2eZptKC1xxoLLobl0WPJ7WUwD+2/7oQttDg0GKUC1esO69nRAdBU/nvHkHQQMkBN5FlhffpLM0zJrA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 7947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 17849)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-06-26 20:30:14 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 6721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 17448)
+
+
+Started POST "/users" for ::1 at 2020-06-26 20:30:30 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"eInIGHCWjSTVxv3hWERjNIvucU/3mIuYtPByvIrkgPNaMy6UYe7lzy/K2yfSL54PBDLdNkD/ynhY3iOJIh06Jg==", "user"=>{"email"=>"teste@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (111.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "teste@gmail.com"], ["encrypted_password", "$2a$11$Wu90pxwRn2nsqGLiAWI/HeDS3OkYam3AvwxnzCfH8BWpK/rrSNT2m"], ["created_at", "2020-06-26 23:30:30.151996"], ["updated_at", "2020-06-26 23:30:30.151996"]]
+  [1m[35m (82.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 422ms (ActiveRecord: 194.5ms | Allocations: 10784)
+
+
+Started GET "/admin" for ::1 at 2020-06-26 20:30:30 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1171)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms | Allocations: 4510)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <button><%= link_to "Home", root_path %> </button>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+        <%= simple_form_for([ person ], remote: true, id="new-person") do |f| %>
+          <%= f.input :content, id="new-person-name" %>
+          <%= f.button :submit, id="add-person" %>
+        <% end %>
+    </div>
+
+
+
+
+
+
+  <script>
+
+    const showPeople = (data) => {
+      data.forEach( i => {
+        let newLi = document.createElement('li')
+        newLi.innerHTML = i.name
+        document.getElementById("person-name").appendChild(newLi)
+      })
+    }
+
+    const fetchPeople = (event) => {
+      const url = "/api/v1/people"
+      fetch(url)
+        .then(res => res.json())
+        .then(showPeople)
+    }
+
+    const leWagon = window.addEventListener('load', fetchPeople)
+
+
+    //ADD a person
+    const newPerson = document.getElementById("new-person")
+    const newPersonInput = document.getElementById("new-person-name")
+
+    newPerson.addEventListener("submit", (event) => {
+      event.preventDefault();
+      fetch("/api/v1/people", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ person: { name: newPersonInput.value }})
+      })
+        .then(response => response.json())
+        .then((data) => {
+        })
+        newPerson.submit()
+        newPerson.reset()
+    })
+
+
+
+
+
+  </script>
+</div>
+
+):
+1:    <div class="container mt-5">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <button><%= link_to "Home", root_path %> </button>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:            <%= simple_form_for([ person ], remote: true, id="new-person") do |f| %>
+15:              <%= f.input :content, id="new-person-name" %>
+16:              <%= f.button :submit, id="add-person" %>
+17:            <% end %>
+18:        </div>
+19:    
+20:    
+21:    
+22:    
+23:    
+24:    
+25:      <script>
+26:    
+27:        const showPeople = (data) => {
+28:          data.forEach( i => {
+29:            let newLi = document.createElement('li')
+30:            newLi.innerHTML = i.name
+31:            document.getElementById("person-name").appendChild(newLi)
+32:          })
+33:        }
+34:    
+35:        const fetchPeople = (event) => {
+36:          const url = "/api/v1/people"
+37:          fetch(url)
+38:            .then(res => res.json())
+39:            .then(showPeople)
+40:        }
+41:    
+42:        const leWagon = window.addEventListener('load', fetchPeople)
+43:    
+44:    
+45:        //ADD a person
+46:        const newPerson = document.getElementById("new-person")
+47:        const newPersonInput = document.getElementById("new-person-name")
+48:    
+49:        newPerson.addEventListener("submit", (event) => {
+50:          event.preventDefault();
+51:          fetch("/api/v1/people", {
+52:            method: "POST",
+53:            headers: {
+54:              "Accept": "application/json",
+55:              "Content-Type": "application/json"
+56:            },
+57:            body: JSON.stringify({ person: { name: newPersonInput.value }})
+58:          })
+59:            .then(response => response.json())
+60:            .then((data) => {
+61:            })
+62:            newPerson.submit()
+63:            newPerson.reset()
+64:        })
+65:    
+66:    
+67:    
+68:    
+69:    
+70:      </script>
+71:    </div>
+  
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting =>
+app/views/pages/admin.html.erb:74: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting =>
+app/views/pages/admin.html.erb:74: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting =>
+app/views/pages/admin.html.erb:74: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting =>
+app/views/pages/admin.html.erb:74: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting =>
+app/views/pages/admin.html.erb:74: syntax error, unexpected end, expecting end-of-input
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting =>
+app/views/pages/admin.html.erb:74: syntax error, unexpected end, expecting end-of-input
+Started GET "/admin" for ::1 at 2020-06-26 20:40:48 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 0.9ms | Allocations: 12834)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-26 20:40:49 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (83.5ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 110.6ms | Allocations: 3994)
+Completed 200 OK in 114ms (Views: 16.2ms | ActiveRecord: 95.9ms | Allocations: 4801)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-06-26 20:41:04 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"Clebinho"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "Clebinho"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Create (12.7ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "clebinho"], ["created_at", "2020-06-26 23:41:04.971656"], ["updated_at", "2020-06-26 23:41:04.971656"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+Started GET "/admin" for ::1 at 2020-06-26 20:41:05 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.6ms | Allocations: 11594)
+
+
+  [1m[35m (49.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  Rendering api/v1/people/show.json.jbuilder
+  Rendered api/v1/people/show.json.jbuilder (Duration: 0.8ms | Allocations: 108)
+Completed 201 Created in 75ms (Views: 2.0ms | ActiveRecord: 63.7ms | Allocations: 19574)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-06-26 20:41:05 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 1.1ms | Allocations: 1248)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1694)
+
+
+Started GET "/" for ::1 at 2020-07-12 16:47:08 -0300
+  [1m[35m (90.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 27.7ms | Allocations: 505)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e5f94d620fc366e60cba
+Version: webpack 4.43.0
+Time: 1673ms
+Built at: 07/12/2020 4:47:15 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2a52a72e33e1c9670b64.js    768 KiB  application  [emitted] [immutable]  application
+js/application-2a52a72e33e1c9670b64.js.map    888 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2a52a72e33e1c9670b64.js js/application-2a52a72e33e1c9670b64.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.26 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './views/dashboard' in '/home/raquel/code/raquelgraca/api-quotes-lw-rio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 27:0-60
+
+Completed 200 OK in 6075ms (Views: 6064.5ms | ActiveRecord: 0.0ms | Allocations: 41214)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 16:47:24 -0300
+Processing by PagesController#admin as HTML
+Completed 401 Unauthorized in 111ms (ActiveRecord: 0.0ms | Allocations: 1147)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-07-12 16:47:24 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 623)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 124.6ms | Allocations: 15569)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 265ms (Views: 135.5ms | ActiveRecord: 97.9ms | Allocations: 33401)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-07-12 16:47:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"eCFV07GUP82KUMpch58/ErOVwMLdjv8xoFwZk9nbpOwFnkqLu1QX9kD0ZCicd/bf8cVCDnY/nyYVexYrxfNe2Q==", "user"=>{"email"=>"raquel@teste.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (37.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "raquel@teste.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 72ms (ActiveRecord: 38.2ms | Allocations: 2583)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"eCFV07GUP82KUMpch58/ErOVwMLdjv8xoFwZk9nbpOwFnkqLu1QX9kD0ZCicd/bf8cVCDnY/nyYVexYrxfNe2Q==", "user"=>{"email"=>"raquel@teste.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 7941)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 18475)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-07-12 16:47:39 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.2ms | Allocations: 6721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 17470)
+
+
+Started POST "/users" for ::1 at 2020-07-12 16:47:59 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"jH2r8wmVBVFyj54w52eMZ1y0/HHikGcJT4IITowxa/riNgUy7ClGw1FZ0PSmX5HHJ6dg35NOwlnt3t1rPCQKyw==", "user"=>{"email"=>"raquel@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "raquel@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (65.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "raquel@email.com"], ["encrypted_password", "$2a$11$QPRRcEmefBtf7d7sXlHHzeEAXQoTfy863Xim/C7VvDB7CTzO0ARVC"], ["created_at", "2020-07-12 19:47:59.440888"], ["updated_at", "2020-07-12 19:47:59.440888"]]
+  [1m[35m (52.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 276ms (ActiveRecord: 118.9ms | Allocations: 9008)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 16:47:59 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 12.1ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 31.3ms | ActiveRecord: 0.7ms | Allocations: 12888)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 16:48:04 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 34)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 14.5ms | ActiveRecord: 0.7ms | Allocations: 11472)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 16:48:07 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 17.5ms | ActiveRecord: 0.7ms | Allocations: 11500)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 16:50:28 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 12648)
+
+
+Started GET "/application.js" for ::1 at 2020-07-12 16:50:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-07-12 16:50:51 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.7ms | Allocations: 11591)
+
+
+Started GET "/application.js" for ::1 at 2020-07-12 16:50:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-07-12 16:50:55 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 34)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.7ms | ActiveRecord: 0.7ms | Allocations: 11466)
+
+
+Started GET "/application.js" for ::1 at 2020-07-12 16:50:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-07-12 16:52:36 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 12638)
+
+
+Started GET "/application.js" for ::1 at 2020-07-12 16:52:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/application.js"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-07-12 17:08:07 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1113)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.4ms | Allocations: 4088)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: "btn btn-primary" %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+      <%= simple_form_for @people do |f|, id: "new-person"  %>
+        <%= f.input :name, id: "new-person-name" %>
+        <%= f.button :submit, placeholder: "Add a person", id: "add-person" %>
+      <% end %>
+    </div>
+</div>
+
+):
+1:    <div class="container mt-5">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: "btn btn-primary" %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:          <%= simple_form_for @people do |f|, id: "new-person"  %>
+15:            <%= f.input :name, id: "new-person-name" %>
+16:            <%= f.button :submit, placeholder: "Add a person", id: "add-person" %>
+17:          <% end %>
+18:        </div>
+19:    </div>
+  
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:09:36 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1113)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3963)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: "btn btn-primary" %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+      <%= simple_form_for @people do |f|, id: "new-person"  %>
+        <%= f.input :name, id: "new-person-name" %>
+        <%= f.button :submit 'Add a person', id: "add-person" %>
+      <% end %>
+    </div>
+</div>
+
+):
+1:    <div class="container mt-5">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: "btn btn-primary" %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:          <%= simple_form_for @people do |f|, id: "new-person"  %>
+15:            <%= f.input :name, id: "new-person-name" %>
+16:            <%= f.button :submit 'Add a person', id: "add-person" %>
+17:          <% end %>
+18:        </div>
+19:    </div>
+  
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:13:48 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1113)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 3963)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: "btn btn-primary" %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+      <%= simple_form_for @people do |f|, item_label_class: "new-person"  %>
+        <%= f.input :name, item_label_class: "new-person-name" %>
+        <%= f.button :submit 'Add a person', item_label_class: "add-person" %>
+      <% end %>
+    </div>
+</div>
+
+):
+1:    <div class="container mt-5">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: "btn btn-primary" %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:          <%= simple_form_for @people do |f|, item_label_class: "new-person"  %>
+15:            <%= f.input :name, item_label_class: "new-person-name" %>
+16:            <%= f.button :submit 'Add a person', item_label_class: "add-person" %>
+17:          <% end %>
+18:        </div>
+19:    </div>
+  
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:14: syntax error, unexpected ','
+app/views/pages/admin.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:22: syntax error, unexpected end, expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:14:16 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1113)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3962)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: "btn btn-primary" %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+      <%= simple_form_for @people do |f| %>
+        <%= f.input :name, item_label_class: "new-person-name" %>
+        <%= f.button :submit 'Add a person', item_label_class: "add-person" %>
+      <% end %>
+    </div>
+</div>
+
+):
+1:    <div class="container mt-5">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: "btn btn-primary" %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:          <%= simple_form_for @people do |f| %>
+15:            <%= f.input :name, item_label_class: "new-person-name" %>
+16:            <%= f.button :submit 'Add a person', item_label_class: "add-person" %>
+17:          <% end %>
+18:        </div>
+19:    </div>
+  
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:14:40 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1113)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms | Allocations: 3962)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container mt-5">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: "btn btn-primary" %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+      <%= simple_form_for @people do |f| %>
+        <%= f.input :name, item_label_class: 'new-person-name' %>
+        <%= f.button :submit 'Add a person', item_label_class: 'add-person' %>
+      <% end %>
+    </div>
+</div>
+
+):
+1:    <div class="container mt-5">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: "btn btn-primary" %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:          <%= simple_form_for @people do |f| %>
+15:            <%= f.input :name, item_label_class: 'new-person-name' %>
+16:            <%= f.button :submit 'Add a person', item_label_class: 'add-person' %>
+17:          <% end %>
+18:        </div>
+19:    </div>
+  
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/pages/admin.html.erb:16: syntax error, unexpected ',', expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:15:30 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 163)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 85f7529c6f9df20c8bae
+Version: webpack 4.43.0
+Time: 786ms
+Built at: 07/12/2020 5:15:32 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-86f174f329e8f5491ce0.js    768 KiB  application  [emitted] [immutable]  application
+js/application-86f174f329e8f5491ce0.js.map    888 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-86f174f329e8f5491ce0.js js/application-86f174f329e8f5491ce0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.25 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './views/dashboard' in '/home/raquel/code/raquelgraca/api-quotes-lw-rio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 27:0-48
+
+Completed 200 OK in 1793ms (Views: 1791.0ms | ActiveRecord: 0.2ms | Allocations: 13852)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:15:45 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.0ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 18.6ms | ActiveRecord: 0.6ms | Allocations: 12660)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:19:34 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 218)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e5f94d620fc366e60cba
+Version: webpack 4.43.0
+Time: 743ms
+Built at: 07/12/2020 5:19:36 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2a52a72e33e1c9670b64.js    768 KiB  application  [emitted] [immutable]  application
+js/application-2a52a72e33e1c9670b64.js.map    888 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2a52a72e33e1c9670b64.js js/application-2a52a72e33e1c9670b64.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.26 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './views/dashboard' in '/home/raquel/code/raquelgraca/api-quotes-lw-rio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 27:0-60
+
+Completed 200 OK in 1737ms (Views: 1733.9ms | ActiveRecord: 0.2ms | Allocations: 13892)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-07-12 17:19:36 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (78.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 116.5ms | Allocations: 4040)
+Completed 200 OK in 118ms (Views: 29.2ms | ActiveRecord: 88.1ms | Allocations: 4837)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:20:17 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 218)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 12706)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-07-12 17:20:18 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 6.6ms | Allocations: 1318)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 2053)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:20:42 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 12723)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-07-12 17:20:43 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.5ms | Allocations: 1318)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 2067)
+
+
+Started POST "/api/v1/people" for ::1 at 2020-07-12 17:21:25 -0300
+Processing by Api::V1::PeopleController#create as JSON
+  Parameters: {"person"=>{"name"=>"Iri"}}
+Started GET "/admin" for ::1 at 2020-07-12 17:21:26 -0300
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  [1m[36mPerson Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "people" WHERE "people"."name" = $1 LIMIT $2[0m  [["name", "Iri"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+  [1m[36mPerson Create (18.0ms)[0m  [1m[32mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "iri"], ["created_at", "2020-07-12 20:21:26.014544"], ["updated_at", "2020-07-12 20:21:26.014544"]]
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 13.6ms | ActiveRecord: 1.0ms | Allocations: 12364)
+
+
+  [1m[35m (78.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/people_controller.rb:16:in `create'
+  Rendering api/v1/people/show.json.jbuilder
+  Rendered api/v1/people/show.json.jbuilder (Duration: 23.3ms | Allocations: 108)
+Completed 201 Created in 138ms (Views: 24.1ms | ActiveRecord: 99.2ms | Allocations: 19775)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-07-12 17:21:26 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 2.0ms | Allocations: 1294)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1746)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:25:33 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 210)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e5f94d620fc366e60cba
+Version: webpack 4.43.0
+Time: 773ms
+Built at: 07/12/2020 5:25:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2a52a72e33e1c9670b64.js    768 KiB  application  [emitted] [immutable]  application
+js/application-2a52a72e33e1c9670b64.js.map    888 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2a52a72e33e1c9670b64.js js/application-2a52a72e33e1c9670b64.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.26 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './views/dashboard' in '/home/raquel/code/raquelgraca/api-quotes-lw-rio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 27:0-60
+
+Completed 200 OK in 1766ms (Views: 1763.7ms | ActiveRecord: 0.2ms | Allocations: 13891)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:25:39 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.3ms | Allocations: 47)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 0.4ms | Allocations: 11482)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:26:47 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.2ms | Allocations: 42)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ee5ca6bc72b96c916d17
+Version: webpack 4.43.0
+Time: 818ms
+Built at: 07/12/2020 5:26:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-56aecbef37a5f48e4208.js    768 KiB  application  [emitted] [immutable]  application
+js/application-56aecbef37a5f48e4208.js.map    888 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-56aecbef37a5f48e4208.js js/application-56aecbef37a5f48e4208.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/controllers sync recursive _controller\.js$] ./app/javascript/controllers sync _controller\.js$ 186 bytes {application} [built]
+[./app/javascript/controllers/hello_controller.js] 3.24 KiB {application} [optional] [built]
+[./app/javascript/controllers/index.js] 396 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.26 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './views/dashboard' in '/home/raquel/code/raquelgraca/api-quotes-lw-rio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 27:0-58
+
+Completed 200 OK in 1861ms (Views: 1858.4ms | ActiveRecord: 0.2ms | Allocations: 12681)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:29:00 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 12708)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:33:35 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1611)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 4449)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    12:     <div class="card mt-5 p-4">
+    13:       <h5>Hey! Who do you want to add inside this Wagon?</h5>
+    14: 
+    15:       <%= simple_form_for @person, html: { id: 'new-person' } do |f| %>
+    16:         <%= f.input :name, html: { id: 'new-person-name' } %>
+    17:         <%= f.button :submit, html: { id: 'add-person' } %>
+    18:       <% end %>
+  
+app/views/pages/admin.html.erb:15
+Started GET "/admin" for ::1 at 2020-07-12 17:34:12 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1175)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 4020)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container my-5 mx-auto">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: 'btn btn-primary' %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+
+      <%= simple_form_for @person do |f|, html: { id: 'new-person' } %>
+        <%= f.input :name, html: { id: 'new-person-name' } %>
+        <%= f.button :submit, html: { id: 'add-person' } %>
+      <% end %>
+<%# 
+      <form id="new-person"> <!-- No need for action or method attributes  -->
+        <input type="text" id="new-person-name">
+        <input type="submit" id="add-person" value="Add a person">
+      </form> %>
+    </div>
+</div>
+<script>
+    const showPeople = (data) => {
+      data.forEach( i => {
+        let newLi = document.createElement('li')
+        newLi.innerHTML = i.name
+        document.getElementById("person-name").appendChild(newLi)
+      })
+    }
+
+    const fetchPeople = (event) => {
+      const url = "/api/v1/people"
+      fetch(url)
+        .then(res => res.json())
+        .then(showPeople)
+    }
+
+    const leWagon = window.addEventListener('load', fetchPeople)
+
+
+    //ADD a person
+    const newPerson = document.getElementById("new-person")
+    const newPersonInput = document.getElementById("new-person-name")
+
+    newPerson.addEventListener("submit", (event) => {
+      event.preventDefault();
+      fetch("/api/v1/people", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ person: { name: newPersonInput.value }})
+      })
+        .then(response => response.json())
+        .then((data) => {
+        })
+        newPerson.submit()
+        newPerson.reset()
+    })
+  </script>
+):
+1:    <div class="container my-5 mx-auto">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: 'btn btn-primary' %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:    
+15:          <%= simple_form_for @person do |f|, html: { id: 'new-person' } %>
+16:            <%= f.input :name, html: { id: 'new-person-name' } %>
+17:            <%= f.button :submit, html: { id: 'add-person' } %>
+18:          <% end %>
+19:    <%# 
+20:          <form id="new-person"> <!-- No need for action or method attributes  -->
+21:            <input type="text" id="new-person-name">
+22:            <input type="submit" id="add-person" value="Add a person">
+23:          </form> %>
+24:        </div>
+25:    </div>
+26:    <script>
+27:        const showPeople = (data) => {
+28:          data.forEach( i => {
+29:            let newLi = document.createElement('li')
+30:            newLi.innerHTML = i.name
+31:            document.getElementById("person-name").appendChild(newLi)
+32:          })
+33:        }
+34:    
+35:        const fetchPeople = (event) => {
+36:          const url = "/api/v1/people"
+37:          fetch(url)
+38:            .then(res => res.json())
+39:            .then(showPeople)
+40:        }
+41:    
+42:        const leWagon = window.addEventListener('load', fetchPeople)
+43:    
+44:    
+45:        //ADD a person
+46:        const newPerson = document.getElementById("new-person")
+47:        const newPersonInput = document.getElementById("new-person-name")
+48:    
+49:        newPerson.addEventListener("submit", (event) => {
+50:          event.preventDefault();
+51:          fetch("/api/v1/people", {
+52:            method: "POST",
+53:            headers: {
+54:              "Accept": "application/json",
+55:              "Content-Type": "application/json"
+56:            },
+57:            body: JSON.stringify({ person: { name: newPersonInput.value }})
+58:          })
+59:            .then(response => response.json())
+60:            .then((data) => {
+61:            })
+62:            newPerson.submit()
+63:            newPerson.reset()
+64:        })
+65:      </script>
+  
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:38:17 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1175)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 4020)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container my-5 mx-auto">
+  <div class="my-4 d-flex justify-content-between align-items-center">
+    <%= link_to "Home", root_path, class: 'btn btn-primary' %>
+    <h3>Admin Dashboard</h3>
+  </div>
+    <div class="card p-4" >
+      <h5>Who is already in:</h5>
+      <ul>
+        <li id="person-name" style="text-transform: capitalize"></li>
+      </ul>
+    </div>
+    <div class="card mt-5 p-4">
+      <h5>Hey! Who do you want to add inside this Wagon?</h5>
+
+      <%= simple_form_for @person do |f|, item_label_class: 'new-person' %>
+        <%= f.input :name, item_label_class:'new-person-name' %>
+        <%= f.button :submit, item_label_class: 'add-person' %>
+      <% end %>
+<%# 
+      <form id="new-person"> <!-- No need for action or method attributes  -->
+        <input type="text" id="new-person-name">
+        <input type="submit" id="add-person" value="Add a person">
+      </form> %>
+    </div>
+</div>
+<script>
+    const showPeople = (data) => {
+      data.forEach( i => {
+        let newLi = document.createElement('li')
+        newLi.innerHTML = i.name
+        document.querySelector(".person-name").appendChild(newLi)
+      })
+    }
+
+    const fetchPeople = (event) => {
+      const url = "/api/v1/people"
+      fetch(url)
+        .then(res => res.json())
+        .then(showPeople)
+    }
+
+    const leWagon = window.addEventListener('load', fetchPeople)
+
+
+    //ADD a person
+    const newPerson = document.querySelector(".new-person")
+    const newPersonInput = document.querySelector(".new-person-name")
+
+    newPerson.addEventListener("submit", (event) => {
+      event.preventDefault();
+      fetch("/api/v1/people", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ person: { name: newPersonInput.value }})
+      })
+        .then(response => response.json())
+        .then((data) => {
+        })
+        newPerson.submit()
+        newPerson.reset()
+    })
+  </script>
+):
+1:    <div class="container my-5 mx-auto">
+2:      <div class="my-4 d-flex justify-content-between align-items-center">
+3:        <%= link_to "Home", root_path, class: 'btn btn-primary' %>
+4:        <h3>Admin Dashboard</h3>
+5:      </div>
+6:        <div class="card p-4" >
+7:          <h5>Who is already in:</h5>
+8:          <ul>
+9:            <li id="person-name" style="text-transform: capitalize"></li>
+10:          </ul>
+11:        </div>
+12:        <div class="card mt-5 p-4">
+13:          <h5>Hey! Who do you want to add inside this Wagon?</h5>
+14:    
+15:          <%= simple_form_for @person do |f|, item_label_class: 'new-person' %>
+16:            <%= f.input :name, item_label_class:'new-person-name' %>
+17:            <%= f.button :submit, item_label_class: 'add-person' %>
+18:          <% end %>
+19:    <%# 
+20:          <form id="new-person"> <!-- No need for action or method attributes  -->
+21:            <input type="text" id="new-person-name">
+22:            <input type="submit" id="add-person" value="Add a person">
+23:          </form> %>
+24:        </div>
+25:    </div>
+26:    <script>
+27:        const showPeople = (data) => {
+28:          data.forEach( i => {
+29:            let newLi = document.createElement('li')
+30:            newLi.innerHTML = i.name
+31:            document.querySelector(".person-name").appendChild(newLi)
+32:          })
+33:        }
+34:    
+35:        const fetchPeople = (event) => {
+36:          const url = "/api/v1/people"
+37:          fetch(url)
+38:            .then(res => res.json())
+39:            .then(showPeople)
+40:        }
+41:    
+42:        const leWagon = window.addEventListener('load', fetchPeople)
+43:    
+44:    
+45:        //ADD a person
+46:        const newPerson = document.querySelector(".new-person")
+47:        const newPersonInput = document.querySelector(".new-person-name")
+48:    
+49:        newPerson.addEventListener("submit", (event) => {
+50:          event.preventDefault();
+51:          fetch("/api/v1/people", {
+52:            method: "POST",
+53:            headers: {
+54:              "Accept": "application/json",
+55:              "Content-Type": "application/json"
+56:            },
+57:            body: JSON.stringify({ person: { name: newPersonInput.value }})
+58:          })
+59:            .then(response => response.json())
+60:            .then((data) => {
+61:            })
+62:            newPerson.submit()
+63:            newPerson.reset()
+64:        })
+65:      </script>
+  
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:15: syntax error, unexpected ','
+app/views/pages/admin.html.erb:15: syntax error, unexpected ')', expecting end
+app/views/pages/admin.html.erb:18: syntax error, unexpected end, expecting ')'
+app/views/pages/admin.html.erb:67: syntax error, unexpected end, expecting ')'
+Started GET "/admin" for ::1 at 2020-07-12 17:38:37 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1600)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 4449)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    12:     <div class="card mt-5 p-4">
+    13:       <h5>Hey! Who do you want to add inside this Wagon?</h5>
+    14: 
+    15:       <%= simple_form_for @person do |f| %>
+    16:         <%= f.input :name, item_label_class:'new-person-name' %>
+    17:         <%= f.button :submit, item_label_class: 'add-person' %>
+    18:       <% end %>
+  
+app/views/pages/admin.html.erb:15
+Started GET "/admin" for ::1 at 2020-07-12 17:39:15 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 12697)
+
+
+Started GET "/api/v1/people" for ::1 at 2020-07-12 17:39:15 -0300
+Processing by Api::V1::PeopleController#index as JSON
+  Rendering api/v1/people/index.json.jbuilder
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/api/v1/people/index.json.jbuilder:1
+  Rendered api/v1/people/index.json.jbuilder (Duration: 7.6ms | Allocations: 1365)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 2101)
+
+
+Started GET "/admin" for ::1 at 2020-07-12 17:39:58 -0300
+Processing by PagesController#admin as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/admin.html.erb within layouts/application
+  Rendered pages/admin.html.erb within layouts/application (Duration: 0.4ms | Allocations: 214)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 12706)
+
+
