@@ -16,7 +16,7 @@ const showPeople = () => {
       .then(showPeople)
   }
   
-  const leWagon = window.addEventListener('load', fetchPeople)
+  window.addEventListener('load', fetchPeople)
 
 }  
 
