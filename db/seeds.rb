@@ -46,3 +46,6 @@ quotes.keys.each do |person|
     Quote.create! content: quote, person: eval("#{person}")
   end
 end
+
+puts 'Create one user'
+User.create! email: 'player@one.com', password: 123456
