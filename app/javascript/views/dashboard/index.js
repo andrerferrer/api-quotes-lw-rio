@@ -43,6 +43,4 @@ function addPerson () {
   })
 }
 
-export default addPerson;
-
-export default showPeople;
+export { addPerson, showPeople }
