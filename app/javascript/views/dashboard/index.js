@@ -1,11 +1,16 @@
 
-const showPeople = () => {
+const loadPeopleInTheDOM = () => {
   
   const showPeople = (data) => {
+    // select the ul
+    const peopleNames = document.getElementById("people-names");
+    // empty it
+    peopleNames.innerHTML = ""
+    // add all the <li>s
     data.forEach( i => {
       let newLi = document.createElement('li')
       newLi.innerHTML = i.name
-      document.getElementById("person-name").appendChild(newLi)
+      peopleNames.appendChild(newLi)
     })
   }
   
@@ -16,7 +21,7 @@ const showPeople = () => {
       .then(showPeople)
   }
   
-  window.addEventListener('load', fetchPeople)
+  fetchPeople();
 
 }  
 
@@ -37,10 +42,11 @@ const addPerson = () => {
     })
       .then(response => response.json())
       .then((data) => {
+        loadPeopleInTheDOM();
       })
 
       newPerson.reset()
   })
 }
 
-export { addPerson, showPeople }
+export { addPerson, loadPeopleInTheDOM }
