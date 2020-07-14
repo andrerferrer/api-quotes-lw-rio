@@ -28,13 +28,13 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-import { addPerson, showPeople } from '../views/dashboard/index';
+import { addPerson, loadPeopleInTheDOM } from '../views/dashboard/index';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   addPerson();
-  showPeople();
+  loadPeopleInTheDOM();
 });
 
 import "controllers"
