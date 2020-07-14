@@ -1,5 +1,5 @@
 
-function showPeople () {
+const showPeople = () => {
   
   const showPeople = (data) => {
     data.forEach( i => {
@@ -21,7 +21,7 @@ function showPeople () {
 }  
 
 
-function addPerson () {
+const addPerson = () => {
   const newPerson = document.getElementById("new-person")
   const newPersonInput = document.getElementById("new-person-name")
   
