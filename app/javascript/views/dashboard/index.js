@@ -38,7 +38,7 @@ const addPerson = () => {
       .then(response => response.json())
       .then((data) => {
       })
-      newPerson.submit()
+
       newPerson.reset()
   })
 }
