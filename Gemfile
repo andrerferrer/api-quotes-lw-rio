@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Pundit gem for security
 gem 'pundit'
+
+# Add rack cors gem for API handling requests
+gem 'rack-cors'
